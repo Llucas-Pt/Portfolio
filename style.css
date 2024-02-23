@@ -1,0 +1,660 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior:  smooth;
+}
+
+
+:root {
+    --stro-color: rgba(255,255,255,0.5);
+    --surface-color:rgba(0, 0, 0, 0.021);
+}
+
+
+@font-face {
+    font-family: Nanum Brush Script;
+    src: url(Let/Nanum_Brush_Script/NanumBrushScript-Regular.ttf);
+}
+/*CABEÇALHO*/
+header {
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    background-color: white;
+
+}
+
+
+
+header h1 {
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+
+
+nav ul a {
+    margin: 2rem;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: 'Nanum Brush Script', cursive;
+    position: relative; /* Importante para posicionar o pseudo-elemento */
+    display: inline-block; /* Para permitir o dimensionamento correto do pseudo-elemento */
+}
+
+
+
+nav ul a:hover:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Ajuste conforme necessário */
+    width: 100%;
+    height: 2px;
+    background-color: rgb(0, 0, 0); /* Cor da linha */
+    animation: bor 0.5s ease-out forwards; 
+}
+
+@keyframes bor {
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+main {
+    position: relative;
+    width: 100vw;
+}
+
+
+
+
+/*SCROLL*/
+#scrollTop{
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    cursor: pointer;
+}
+
+
+
+/*TITULO*/
+#sectitulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.fotolc{
+    position: relative;
+
+}
+
+
+#imglc{
+    position: absolute;
+    right: 220px;
+    top: 60px;
+    align-items: center;
+    border-radius: 100px;
+    width: 180px;
+}
+
+#MaisInfo{
+    display: flex;
+}
+
+#MaisInfo a {
+    padding: 10px 15px;
+    margin: 0px 2% 0px 0px;
+    border: 1px solid black;
+    border-radius: 50px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: smaller;  
+}
+.web h1 {
+    width: 12ch;
+    white-space: nowrap;
+    border-right: 4px solid;
+    overflow: hidden;
+    animation: typing 2.5s steps(30) forwards, blinking 0.5s infinite step-end alternate;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 80px;
+    color: rgba(0, 0, 0, 0.849);
+
+}
+
+#desen{
+    Color: gray;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: xx-large;
+}
+
+.web h3 {
+    font-size: 55px;
+    font-family: 'Nanum Brush Script', cursive;
+    color: rgba(0, 0, 0, 0.856);
+}
+
+.web{
+    width: 23%
+}
+
+
+
+#MaisInfo a:hover{
+    border: none;
+    background-color: rgba(128, 128, 128, 0.486);
+    color: black;
+    transition: 0.5s;
+
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 12ch; }
+}
+
+@keyframes blinking {
+    50% { border-color: transparent; }
+}
+
+
+
+/*SOBRE*/
+#secSobre h1 {
+    font-family: 'Nanum Brush Script', cursive;
+    margin: 0px 0px 2% 0px;
+    font-size: xx-large; 
+}
+#secSobre {
+display: block;
+justify-content: center;
+text-align: center;
+background-color: rgba(128, 128, 128, 0.384); 
+padding: 15vh;
+}
+
+#secSobre #sobreh1 {
+    margin: 0% 30%;
+}
+
+#secSobre  button {
+    height: 4em;
+    width: 13em;
+    border: none;
+    border-radius: 40px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+#secSobre button span {
+    z-index: 1;
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    height: 3.3rem;
+    width: 11.5em;
+    border-radius: 25px;
+    color: #fff;
+    line-height: 55px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    transition: all 0.5s;
+    font-family: 'Nanum Brush Script', cursive;
+  }
+  
+#secSobre button .container {
+    z-index: -1;
+    width: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transform: translateY(-50px);
+    transition: all 0.4s;
+    margin-left: 40px;
+
+  }
+  
+#secSobre button .container a {
+    padding: 5px 5px;
+  }
+  
+  #secSobre  button:hover span {
+    width: 0;
+  }
+  
+  #secSobre  button:hover .container {
+    z-index: 2;
+    width: 100%;
+  }
+
+
+
+/*TECNOLOGIAS*/
+#secTecnologia{
+    padding: 10px 3%;
+    text-align: center; 
+}
+
+#secTecnologia h1 {
+    font-family: 'Nanum Brush Script', cursive;
+    margin: 0px 0px 2% 0px;
+    font-size: xx-large;
+}
+
+.front{
+    padding: 1%;
+}
+.back{
+    padding: 1%;
+}
+.emdesenvolvimento{
+    padding: 1%;
+}
+
+.front img{
+  margin: 0px 1%;
+}
+.back img{
+    margin: 0px 1%;
+}
+.emdesenvolvimento img{
+    margin: 0px 1%;  
+}
+
+
+/*PROJETOS*/
+#secprojetos{
+display: block;
+justify-content: center;
+text-align: center;
+background-color: rgba(128, 128, 128, 0.384); 
+padding: 10vh 0px;
+width: 100vw;
+
+
+}
+
+#secprojetos h1 {
+    font-family: 'Nanum Brush Script', cursive;
+    margin: 0px 0px 2% 0px;
+    font-size: xx-large;
+}
+
+#proje{
+    margin: 0% 25%;
+}
+
+
+
+#secprojetos .proje1{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+#secprojetos .divproje1{  
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+}
+#secprojetos .divproje1{
+    background-image: url(Img/Captura\ de\ ecrã\ 2024-02-20\ 101040.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}  
+  #secprojetos .corpoproj1{
+    display: block;
+    width: 300px;
+    border-radius: 20px;
+    background-color: white;
+
+}
+
+/**/
+
+#secprojetos .proje2{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+  }
+  #secprojetos .divproje2{
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+  }
+  #secprojetos .divproje2{
+    background-image: url(Img/Captura\ de\ ecrã\ 2024-02-21\ 144646.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #secprojetos .corpoproj2{
+    display: block;
+    margin-left: 70%;
+    width: 300px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+
+/**/
+  #secprojetos .proje3{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+ 
+   
+  }
+  #secprojetos .divproje3{
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+      
+  }
+  #secprojetos .divproje3{
+    background-image: url(Img/Cadastro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+  }
+  #secprojetos .corpoproj3{
+    display: block;
+    width: 300px;
+    border-radius: 20px;
+    background-color: white;
+    
+}
+#secprojetos a{
+    text-decoration: none;
+
+}
+#secprojetos p{
+    color: black;
+    padding: 10px;
+}
+
+#secprojetos h4{
+    color: rgba(0, 0, 255, 0.5);
+}
+
+
+
+
+/*CONTATO*/
+#secContato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%; 
+}
+
+#corpoContato{
+    border-radius: 10px;
+    padding: 5% 10%;
+    backdrop-filter: blur(0px) saturate(180%);
+
+    border: 1px solid var(--stro-color);
+    /*background: var(--surface-color);*/
+    box-shadow: 1px 1px 5px;
+    background-image: linear-gradient(to right, #ffffff1f, #00000010);
+    background-size: cover;
+}
+#corpoContato h1 {
+    margin: 10px 0px 50px 0px;
+    text-align: center;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: xx-large;
+}
+#corpoContato .col {
+    margin: 10px;
+    border-radius: 50px;
+}
+#corpoContato .col input {
+    padding: 10px;
+    border-radius: 10px;
+}
+#corpoContato .form-group {
+    margin: 10px;
+}
+
+#corpoContato .form-group .form-control {
+    padding: 10px 38% 0px 5px;
+    border-radius: 5px;
+}
+#corpoContato  button{
+    margin: 0px 10px;
+    padding: 5px;
+}
+
+#secContato button{
+    height: 4em;
+    width: 19em;
+    border: none;
+    border-radius: 40px;
+    background-color: #050505;
+    cursor: pointer;
+    color: white;
+}
+
+#secContato button:hover{
+    background-color: rgba(128, 128, 128, 0.486);
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.links2 {
+    display: none;
+}
+
+
+/*FOOTER*/
+
+footer {
+
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.925);
+    padding: 1%;
+    color: white;
+    
+}
+
+footer #fotInfor a{
+    text-decoration: none;
+    color: white;
+    margin: 2%;
+    font-size: small;
+}
+
+footer p {
+    font-size: small;
+    color: rgba(255, 255, 255, 0.37);
+}
+
+footer div {
+    padding-bottom: 1%;
+}
+
+footer div hr {
+    height: 1px;      
+    border: none;     
+    background-color: white; 
+    width: 5%;       
+    margin: 5px auto;
+}
+
+footer a{
+    color: white;
+}
+
+
+
+
+
+/*Media Query*/
+
+
+@media (max-width: 1100px){
+
+    .fotolc {
+        display: none;
+    }
+
+
+    #secprojetos  .corpoproj2 {
+        display: block;
+        margin: 10px 0px;
+        width: 300px;
+        border-radius: 20px;
+    }
+    
+}
+
+
+@media (max-width: 677px){
+
+    .hamburguer-menu {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 15px;
+      }
+      
+      .barra {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+
+      header div h1 {
+        font-size: 300%
+      }
+
+    header {
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+
+    ul {
+     
+        right: 0;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .links2 {
+        display: none;
+    }
+
+
+    #sectitulo h3{
+        font-size: 50px;
+    }
+
+    #sectitulo h1{
+        font-size: 50px;
+    }
+
+    #MaisInfo{
+       flex-direction: column;
+       
+    }
+
+    #MaisInfo a{
+        margin-bottom: 10px;
+    }
+
+
+}
+
+
+
+@media (max-width: 550px){
+
+    #secprojetos .corpoproj1{
+        display: block;
+        width: 100%;
+        border-radius: 20px;
+        background-color: white;
+    }
+    #secprojetos .corpoproj2{
+        display: block;
+        width: 100%;
+        border-radius: 20px;
+        background-color: white;
+    }
+    #secprojetos .corpoproj3{
+        display: block;
+        width: 100%;
+        border-radius: 20px;
+        background-color: white;
+    }
+
+    #corpoContato {
+        border-radius: 10px;
+        padding: 5% 1%;
+        backdrop-filter: blur(0px) saturate(180%);
+        border: 1px solid var(--stro-color);
+        /* background: var(--surface-color); */
+        box-shadow: 1px 1px 5px;
+        background-image: linear-gradient(to right, #ffffff1f, #00000010);
+        background-size: cover;
+    }
+
+    #secSobre{
+        padding: 0;
+    }
+
+    #secSobre #sobreh1 {
+        margin: 0% 3%;}
+}
+
+
+/*MOBIE*/
+
+
+
+  /* Estiliza o ícone hambúrguer para mudar para "X" quando ativo */
+.hamburguer-menu.ativo .barra:nth-child(1) {
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .hamburguer-menu.ativo .barra:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburguer-menu.ativo .barra:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .links2.ativo {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+
+   
+    /* Mostra o menu quando tem a classe 'ativo' */
+    /* Outros estilos para quando o menu está ativo */
+}
