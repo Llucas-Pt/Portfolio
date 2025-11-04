@@ -95,13 +95,13 @@ main {
 }
 
 
-#imglc{
+#imglc {
     position: absolute;
-    right: 225px;
-    top: 50px;
+    right: 155px;
+    top: 19px;
     align-items: center;
-    border-radius: 100px;
-    width: 195px;
+    border-radius: 155px;
+    width: 280px;
 }
 
 #MaisInfo{
@@ -375,6 +375,8 @@ width: 100vw;
     background-color: white;
     
 }
+
+
 
 #secprojetos .proje4{
     display: flex;
