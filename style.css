@@ -108,6 +108,11 @@ main {
     display: flex;
 }
 
+#tecnologg  {
+    font-family: 'Nanum Brush Script', cursive;
+    margin: 0px 0px 2% 0px;
+    font-size: x-large;
+}
 #MaisInfo a {
     padding: 10px 15px;
     margin: 0px 2% 0px 0px;
@@ -332,7 +337,7 @@ width: 100vw;
     border-radius: 20px 20px 0px 0px;
   }
   #secprojetos .divproje2{
-    background-image: url(Img/Captura\ de\ ecrã\ 2024-02-21\ 144646.png);
+    background-image: url(Img/Dashboard.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -362,7 +367,7 @@ width: 100vw;
       
   }
   #secprojetos .divproje3{
-    background-image: url(Img/Cadastro.png);
+    background-image: url(Img/GifDownload.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -390,7 +395,7 @@ width: 100vw;
     border-radius: 20px 20px 0px 0px;
   }
   #secprojetos .divproje4{
-    background-image: url(Img/Download.png);
+    background-image: url(Img/Cadastro.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
