@@ -97,11 +97,11 @@ main {
 
 #imglc {
     position: absolute;
-    right: 155px;
-    top: 19px;
+    right: 175px;
+    top: 53px;
     align-items: center;
     border-radius: 155px;
-    width: 280px;
+    width: 240px;
 }
 
 #MaisInfo{
