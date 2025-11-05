@@ -552,6 +552,13 @@ footer a{
         width: 300px;
         border-radius: 20px;
     }
+
+        #secprojetos  .corpoproj4 {
+        display: block;
+        margin: 10px 0px;
+        width: 300px;
+        border-radius: 20px;
+    }
     
 }
 
@@ -644,7 +651,13 @@ footer a{
         border-radius: 20px;
         background-color: white;
     }
-
+    #secprojetos .corpoproj4{
+        display: block;
+        width: 100%;
+        border-radius: 20px;
+        background-color: white;
+    }
+    
     #corpoContato {
         border-radius: 10px;
         padding: 5% 1%;
